@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Melih Üçer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F8F7F4;
+      --text: #1A1A1A;
+      --accent: #2A7A6F;
+      --muted: #666;
+      --border: #D8D5CF;
+      --max-width: 720px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-wrap { max-width: var(--max-width); margin: 0 auto; }
+
+    header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .name {
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    nav a {
+      color: var(--text);
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    nav a:hover, nav a.active {
+      border-color: var(--accent);
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    section { margin-bottom: 2.8rem; }
+
+    .section-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .paper {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.8rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .paper:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .paper-title {
+      font-weight: bold;
+      margin-bottom: 0.25rem;
+    }
+
+    .paper-title a { color: var(--text); }
+    .paper-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .paper-venue {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .paper-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin-bottom: 0.6rem;
+    }
+
+    .paper-talks {
+      margin-top: 0.7rem;
+      padding-top: 0.7rem;
+      border-top: 1px dashed var(--border);
+    }
+
+    .paper-talks-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .talk {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      font-size: 0.92rem;
+      margin-bottom: 0.3rem;
+      align-items: baseline;
+    }
+
+    .talk:last-child { margin-bottom: 0; }
+
+    .talk-title a { color: var(--text); }
+    .talk-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .talk-date {
+      color: var(--muted);
+      font-size: 0.85rem;
+      white-space: nowrap;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    @media (max-width: 560px) {
+      .talk { grid-template-columns: 1fr; gap: 0.1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrap">
+
+  <header>
+    <div class="name">Melih Üçer</div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="section-label">Papers</div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="http://arxiv.org/abs/2606.28378" target="_blank" rel="noopener">Existence and Structure for First-Order Time-Dependent Mean-Field Games with Local Couplings</a>
+        </div>
+        <div class="paper-venue"><a href="honors.html">Başar-Olsder Award for Best Paper in Dynamic Games</a></div>
+        <div class="paper-meta">With D. Gomes</div>
+        <div class="paper-talks">
+          <div class="paper-talks-label">Talks</div>
+          <div class="talk">
+            <div class="talk-title">21st International Symposium on Dynamic Games and Applications</div>
+            <div class="talk-date">07/2026</div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">15th AIMS Conference: Special Session on Mean Field Games</div>
+            <div class="talk-date">07/2026</div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">Bolzano Workshop on Mean Field Models and Optimal Control</div>
+            <div class="talk-date">06/2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="https://arxiv.org/abs/2603.02921" target="_blank" rel="noopener">Ranking Mean-Field Planning Games</a>
+        </div>
+	<div class="paper-venue">Nonlinear Analysis (accepted)</div>
+        <div class="paper-meta">With A. Almadeh, T. Bakaryan, D. Gomes</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="https://arxiv.org/abs/2506.21212" target="_blank" rel="noopener">Solving Mean-Field Games with Monotonicity Methods in Banach Spaces</a>
+        </div>
+        <div class="paper-venue">SIAM Journal of Mathematical Analysis (accepted)</div>
+        <div class="paper-meta">With R. Ferreira, D. Gomes</div>
+        <div class="paper-talks">
+          <div class="paper-talks-label">Talks</div>
+          <div class="talk">
+            <div class="talk-title">KAUST Workshop on Analysis and PDEs</div>
+            <div class="talk-date">04/2025</div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">Durham Symposium on Mean-Field Games</div>
+            <div class="talk-date">03/2025</div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">14th AIMS Conference: Special Session on Mean Field Games</div>
+            <div class="talk-date">12/2024</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="https://doi.org/10.1007/s00030-025-01099-7" target="_blank" rel="noopener">Regularity for Weak Solutions to First-Order Local Mean-Field Games</a>
+        </div>
+        <div class="paper-venue">Nonlinear Differ. Equ. Appl. <strong>32</strong>, 99 (2025)</div>
+        <div class="paper-meta">With A. Alharbi, G. Di Fazio, D. Gomes</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="https://doi.org/10.1007/s40863-024-00465-0" target="_blank" rel="noopener">A Mean-Field Game Model of Price Formation With Price-Dependent Agent Behavior</a>
+        </div>
+        <div class="paper-venue">São Paulo J. Math. Sci. <strong>18</strong>, 1081–1094 (2024)</div>
+        <div class="paper-meta">With K. Aljadhai, M. Almarhoumi, D. Gomes</div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">
+          <a href="https://doi.org/10.1007/s13163-020-00381-9" target="_blank" rel="noopener">On the Alexander Invariants of Trigonal Curves</a>
+        </div>
+        <div class="paper-venue">Rev. Mat. Complut. <strong>35</strong>, 265–286 (2022)</div>
+        <div class="paper-talks">
+          <div class="paper-talks-label">Talks</div>
+          <div class="talk">
+            <div class="talk-title">PDMI Rohlin Topology Seminar (online)</div>
+            <div class="talk-date">11/2020</div>
+          </div>
+          <div class="talk">
+            <div class="talk-title">Ankara–Istanbul Algebraic Geometry &amp; Number Theory Meetings: a series of three talks</div>
+            <div class="talk-date">Fall 2019</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+<section>
+  <div class="section-label">PhD Thesis</div>
+  <div class="paper">
+    <div class="paper-title">
+      <a href="https://repository.bilkent.edu.tr/server/api/core/bitstreams/b7ae8396-382f-48d8-9769-0a186ed46b54/content" target="_blank" rel="noopener">Alexander Modules of Trigonal Curves</a>
+    </div>
+    <div class="paper-venue">Bilkent University (2021)</div>
+    <div class="paper-meta">Advisor: A. Degtyarev</div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    Last updated August 2026.
+  </footer>
+
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

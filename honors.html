@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honors — Melih Üçer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F8F7F4;
+      --text: #1A1A1A;
+      --accent: #2A7A6F;
+      --muted: #666;
+      --border: #D8D5CF;
+      --max-width: 720px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-wrap { max-width: var(--max-width); margin: 0 auto; }
+
+    header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .name {
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    nav a {
+      color: var(--text);
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    nav a:hover, nav a.active {
+      border-color: var(--accent);
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    /* ── Honor entries (awards) ── */
+    .honor-entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+      align-items: baseline;
+    }
+
+    .honor-entry:last-child { margin-bottom: 0; }
+
+    .honor-title { font-weight: bold; }
+    .honor-title a { color: var(--text); }
+    .honor-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .honor-detail {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.92rem;
+    }
+
+    .honor-date {
+      color: var(--muted);
+      font-size: 0.88rem;
+      white-space: nowrap;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    /* ── Divider between sections ── */
+    .honor-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.8rem 0;
+    }
+
+    /* ── Olympiad subsections ── */
+    .olympiad {
+      margin-bottom: 1.6rem;
+    }
+
+    .olympiad:last-child { margin-bottom: 0; }
+
+    .olympiad-title {
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+    }
+
+    .olympiad-title a { color: var(--text); }
+    .olympiad-title a:hover { color: var(--accent); text-decoration: none; }
+
+    .olympiad-medals {
+      font-size: 0.92rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 0.15rem;
+    }
+
+    .olympiad-note {
+      font-size: 0.88rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    @media (max-width: 560px) {
+      .honor-entry { grid-template-columns: 1fr; gap: 0.2rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrap">
+
+  <header>
+    <div class="name">Melih Üçer</div>
+  </header>
+
+  <main>
+
+    <section>
+
+      <!-- Awards -->
+      <div class="honor-entry">
+        <div>
+          <div class="honor-title"><a href="https://isdg-site.net/best-paper-award-in-dynamic-game-theory/" target="_blank" rel="noopener">Başar-Olsder Award for Best Paper in Dynamic Games</a></div>
+        </div>
+        <div class="honor-date">2026</div>
+      </div>
+
+      <div class="honor-entry">
+        <div>
+          <div class="honor-title"><a href="https://math.bilkent.edu.tr/alisbah-awards.html" target="_blank" rel="noopener">Alisbah Award for Best Graduate Student, Bilkent University Mathematics Department</a></div>
+        </div>
+        <div class="honor-date">2020</div>
+      </div>
+
+      <div class="honor-entry">
+        <div>
+          <div class="honor-title">1st place nationwide, ALES (Turkish Graduate School Entrance Exam)</div>
+        </div>
+        <div class="honor-date">2014</div>
+      </div>
+
+      <hr class="honor-divider">
+
+      <!-- Olympiad medals -->
+      <div class="olympiad">
+        <div class="olympiad-title"><a href="https://www.imo-official.org/results/contestant/15863/" target="_blank" rel="noopener">International Mathematical Olympiad (IMO)</a></div>
+        <div class="olympiad-medals">2010 — Gold &nbsp;&middot;&nbsp; 2009 — Silver &nbsp;&middot;&nbsp; 2008 — Gold &nbsp;&middot;&nbsp; 2007 — Silver</div>
+        <div class="olympiad-note">(<a href="https://aurdip.org/en/we-return-our-imo-medals-in-an-ethical-protest/" target="_blank" rel="noopener">medals returned in protest</a>)</div>
+      </div>
+
+      <div class="olympiad">
+        <div class="olympiad-title">Balkan Mathematical Olympiads (BMO / JBMO)</div>
+        <div class="olympiad-medals">BMO: 2010 — Bronze &nbsp;&middot;&nbsp; 2009 — Silver &nbsp;&middot;&nbsp; 2008 — Gold &nbsp;&middot;&nbsp; 2007 — Bronze</div>
+        <div class="olympiad-medals">JBMO: 2006 — Gold (perfect score)</div>
+      </div>
+
+      <div class="olympiad">
+        <div class="olympiad-title">Turkish National Mathematical Olympiads</div>
+        <div class="olympiad-medals">High school: 2009 — Gold &nbsp;&middot;&nbsp; 2008 — Silver &nbsp;&middot;&nbsp; 2007 — Silver</div>
+        <div class="olympiad-medals">Middle school: 2006 — Gold &nbsp;&middot;&nbsp; 2005 — Gold &nbsp;&middot;&nbsp; 2004 — Bronze</div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Last updated August 2026.
+  </footer>
+
+</div>
+<script src="nav.js"></script>
+</body>
+</html>

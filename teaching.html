@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teaching &amp; Outreach — Melih Üçer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #F8F7F4;
+      --text: #1A1A1A;
+      --accent: #2A7A6F;
+      --muted: #666;
+      --border: #D8D5CF;
+      --max-width: 720px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 0 1.5rem;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .site-wrap { max-width: var(--max-width); margin: 0 auto; }
+
+    header {
+      padding: 3rem 0 1.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .name {
+      font-size: 2.4rem;
+      font-weight: bold;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    nav a {
+      color: var(--text);
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+      transition: border-color 0.15s;
+    }
+
+    nav a:hover, nav a.active {
+      border-color: var(--accent);
+      text-decoration: none;
+      color: var(--accent);
+    }
+
+    section { margin-bottom: 2.8rem; }
+
+    .section-label {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-left: 3px solid var(--accent);
+      padding-left: 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .subsection {
+      margin-bottom: 1.4rem;
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .subsection:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .subsection-title {
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+
+    .course-group {
+      font-size: 0.92rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .course-label {
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .item-row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.5rem;
+      font-size: 0.92rem;
+      margin-bottom: 0.25rem;
+      align-items: baseline;
+    }
+
+    .item-label {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .problem-entry {
+      font-size: 0.92rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .problem-entry:last-child { margin-bottom: 0; }
+
+    .delegation-block {
+      margin-bottom: 0.8rem;
+    }
+
+    .delegation-block:last-child { margin-bottom: 0; }
+
+    .delegation-competition {
+      font-weight: bold;
+      font-size: 0.92rem;
+    }
+
+    .delegation-role {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0 2.5rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    @media (max-width: 560px) {
+      .item-row { grid-template-columns: 1fr; gap: 0.1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrap">
+
+  <header>
+    <div class="name">Melih Üçer</div>
+  </header>
+
+  <main>
+
+    <!-- ══ Undergraduate Teaching ══ -->
+    <section>
+      <div class="section-label">Undergraduate Teaching</div>
+
+      <div class="subsection">
+        <div class="subsection-title">Ankara Yıldırım Beyazıt University &nbsp;<span style="font-weight:normal;color:var(--muted);font-size:0.88rem;font-family:'Helvetica Neue',Arial,sans-serif;">2015–2023</span></div>
+        <div class="course-group"><span class="course-label">Engineering mathematics: </span>Calculus, Linear Algebra, Differential Equations</div>
+        <div class="course-group"><span class="course-label">Mathematics program: </span>General Topology, History of Mathematics</div>
+      </div>
+
+    </section>
+
+    <!-- ══ Olympiad Involvement ══ -->
+    <section>
+      <div class="section-label">Olympiad Involvement</div>
+
+      <!-- Problem Authorship -->
+      <div class="subsection">
+        <div class="subsection-title">Problem Authorship</div>
+        <div class="problem-entry">Author of 30+ problems for the Turkish National Mathematical Olympiad (2015–2023).</div>
+        <div class="problem-entry">Proposed a problem selected for the <a href="https://www.imo-official.org/problems/IMO2017SL.pdf" target="_blank" rel="noopener">IMO Shortlist 2017</a> (N4).</div>
+        <div class="problem-entry">Problem 12093, <em>American Mathematical Monthly</em>, <a href="https://www.tandfonline.com/doi/full/10.1080/00029890.2019.1547601#d1e107" target="_blank" rel="noopener">volume 126, issue 2</a> (2019).</div>
+      </div>
+
+      <!-- Training -->
+      <div class="subsection">
+        <div class="subsection-title">Training</div>
+        <div class="item-row">
+          <div class="item-label">Turkey</div>
+          <div>National camps, since 2015</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">Saudi Arabia</div>
+          <div>National camps, since 2017</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">Occasional</div>
+          <div>Azerbaijan, Iran, <a href="https://www.youtube.com/playlist?list=PL9EgwsgADteyL3CsO5TDeay_4ntBPFc46" target="_blank" rel="noopener">Palestine</a>, UAE</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">Subjects</div>
+          <div>Geometry, number theory (primary); algebra, combinatorics (occasional)</div>
+        </div>
+        <div class="item-row">
+          <div class="item-label">Levels</div>
+          <div>JBMO to IMO</div>
+        </div>
+      </div>
+
+      <!-- Organization & Representation -->
+      <div class="subsection">
+        <div class="subsection-title">Organization &amp; Representation</div>
+
+        <div class="delegation-block">
+          <div class="delegation-competition">International Mathematical Olympiad (IMO)</div>
+          <div class="delegation-role">Observer A, 2015–2019</div>
+        </div>
+
+        <div class="delegation-block">
+          <div class="delegation-competition">Balkan Mathematical Olympiad (BMO)</div>
+          <div class="delegation-role">Deputy Leader, 2015–2017</div>
+          <div class="delegation-role">Leader, 2018</div>
+          <div class="delegation-role">Chair, Problem Selection Committee, 2023</div>
+        </div>
+
+        <div class="delegation-block">
+          <div class="delegation-competition">Junior Balkan Mathematical Olympiad (JBMO)</div>
+          <div class="delegation-role">Deputy Leader, 2015</div>
+          <div class="delegation-role">Leader, 2016</div>
+        </div>
+
+        <div style="margin-top:0.8rem;font-size:0.92rem;font-style:italic;color:var(--muted);">I condemn the IMO administration's stance on humanitarian matters — see <a href="https://aurdip.org/en/we-return-our-imo-medals-in-an-ethical-protest/" target="_blank" rel="noopener">this statement</a>.</div>
+
+      </div>
+
+    </section>
+
+    <!-- ══ Examination Problem Development ══ -->
+    <section>
+      <div class="section-label">Examination Problem Development</div>
+
+      <div class="subsection">
+        <div class="subsection-title">Turkish National Standardized Tests &nbsp;<span style="font-weight:normal;color:var(--muted);font-size:0.88rem;font-family:'Helvetica Neue',Arial,sans-serif;">2018–2023</span></div>
+        <div class="course-group">Problem author for national standardized tests, including the National University Entrance Exam (YKS).</div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    Last updated August 2026.
+  </footer>
+
+</div>
+<script src="nav.js"></script>
+</body>
+</html>
