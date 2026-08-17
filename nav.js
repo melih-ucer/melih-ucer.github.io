@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = [
     { href: "index.html",    label: "Home" },
     { href: "research.html", label: "Research" },
-    { href: "teaching.html", label: "Teaching & Outreach" },
+    { href: "teaching.html", label: "Teaching" },
     { href: "honors.html",   label: "Honors" },
   ];
 

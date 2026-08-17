@@ -177,9 +177,14 @@
     }
 
     @media (max-width: 560px) {
-      .about-grid { grid-template-columns: 1fr; }
-      .sidebar { flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
-      .photo { width: 120px; height: 150px; }
+       .name { font-size: 1.8rem; }
+       nav { gap: 1rem; font-size: 0.75rem; }
+       .about-grid { display: flex; flex-direction: column; }
+       .sidebar { order: -1; flex-direction: row; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+       .photo { width: 80px; height: 80px; border-radius: 50%; }
+       .sidebar-contact { align-items: flex-start; }
+       .sidebar-email { font-size: 0.75rem; text-align: left; }
+      .icon-links { justify-content: flex-start; }
     }
 
     @media (prefers-reduced-motion: reduce) {
